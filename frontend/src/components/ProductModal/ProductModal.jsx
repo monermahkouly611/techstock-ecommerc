@@ -48,7 +48,7 @@ const ProductModal = ({
       setImagePreview(
         product.image
           ? product.image && product.image.startsWith("/uploads")
-            ? `http://localhost:3001${product.image}`
+            ? `${product.image}`
             : product.image
           : ""
       );

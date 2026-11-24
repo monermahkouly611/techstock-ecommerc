@@ -104,7 +104,7 @@ const Cart = () => {
                 <img
                   src={
                     item.image && item.image.startsWith("/uploads")
-                      ? `http://localhost:3001${item.image}`
+                      ? `${item.image}`
                       : item.image || "https://via.placeholder.com/150"
                   }
                   alt={item.name}

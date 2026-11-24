@@ -251,7 +251,7 @@ const Profile = () => {
   // Helper to get the correct profile image URL
   const getProfilePicUrl = (pic) => {
     if (!pic) return 'https://via.placeholder.com/150';
-    if (pic && pic.startsWith('/uploads')) return `http://localhost:3001${pic}`;
+    if (pic && pic.startsWith('/uploads')) return `${pic}`;
     return pic;
   };
 

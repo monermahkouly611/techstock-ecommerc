@@ -111,7 +111,7 @@ export default function ProductDetails() {
   // Product image handling
   const productImage =
     product.image && product.image.startsWith("/uploads")
-      ? `http://localhost:3001${product.image}`
+      ? `${product.image}`
       : product.image ||
         "https://via.placeholder.com/500x500?text=Product+Image";
 

@@ -314,7 +314,7 @@ const OrderHistory = ({ userId }) => {
                                     src={
                                       item.product_image &&
                                       item.product_image.startsWith("/uploads")
-                                        ? `http://localhost:3001${item.product_image}`
+                                        ? `${item.product_image}`
                                         : item.product_image ||
                                           "https://via.placeholder.com/50"
                                     }

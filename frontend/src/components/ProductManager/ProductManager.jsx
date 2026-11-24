@@ -1234,7 +1234,7 @@ function ProductManager() {
                     <img
                       src={
                         p.image && p.image.startsWith("/uploads")
-                          ? `http://localhost:3001${p.image}`
+                          ? `${p.image}`
                           : p.image || "https://via.placeholder.com/50"
                       }
                       alt={p.name}
